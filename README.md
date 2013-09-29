@@ -1,5 +1,5 @@
 ##ABStore
-lightweight <CoreData/CoreData.h> wrapper
+lightweight \<CoreData/CoreData.h\> wrapper
 
 ___
 
