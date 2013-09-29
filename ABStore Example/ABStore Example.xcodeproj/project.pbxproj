@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D254777217F71B3800349B2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D254777117F71B3800349B2B /* Foundation.framework */; };
+		D254777417F71B3800349B2B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D254777317F71B3800349B2B /* CoreGraphics.framework */; };
+		D254777617F71B3800349B2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D254777517F71B3800349B2B /* UIKit.framework */; };
+		D254777C17F71B3800349B2B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D254777A17F71B3800349B2B /* InfoPlist.strings */; };
+		D254777E17F71B3800349B2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D254777D17F71B3800349B2B /* main.m */; };
+		D254778217F71B3800349B2B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D254778117F71B3800349B2B /* AppDelegate.m */; };
+		D25477B117F71C5B00349B2B /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D25477B017F71C5B00349B2B /* TableViewController.m */; };
+		D25477B517F71CBA00349B2B /* ExampleModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D25477B317F71CBA00349B2B /* ExampleModel.xcdatamodeld */; };
+		D25477BB17F7221F00349B2B /* AddPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = D25477BA17F7221F00349B2B /* AddPopUpView.m */; };
+		D25477BE17F7372200349B2B /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D25477BD17F7372200349B2B /* Person.m */; };
+		D2F1FE5917F889220023625F /* ABStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F1FE5317F889220023625F /* ABStore.m */; };
+		D2F1FE5A17F889220023625F /* NSManagedObject+ABStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F1FE5617F889220023625F /* NSManagedObject+ABStore.m */; };
+		D2F1FE5B17F889220023625F /* NSManagedObjectContext+ABStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F1FE5817F889220023625F /* NSManagedObjectContext+ABStore.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D254776E17F71B3800349B2B /* ABStore Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ABStore Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D254777117F71B3800349B2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D254777317F71B3800349B2B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D254777517F71B3800349B2B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D254777917F71B3800349B2B /* ABStore Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ABStore Example-Info.plist"; sourceTree = "<group>"; };
+		D254777B17F71B3800349B2B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D254777D17F71B3800349B2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D254777F17F71B3800349B2B /* ABStore Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ABStore Example-Prefix.pch"; sourceTree = "<group>"; };
+		D254778017F71B3800349B2B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D254778117F71B3800349B2B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D254778A17F71B3800349B2B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D25477AF17F71C5B00349B2B /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		D25477B017F71C5B00349B2B /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		D25477B417F71CBA00349B2B /* ExampleModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExampleModel.xcdatamodel; sourceTree = "<group>"; };
+		D25477B917F7221F00349B2B /* AddPopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPopUpView.h; sourceTree = "<group>"; };
+		D25477BA17F7221F00349B2B /* AddPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPopUpView.m; sourceTree = "<group>"; };
+		D25477BC17F7372200349B2B /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		D25477BD17F7372200349B2B /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		D2F1FE5217F889220023625F /* ABStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABStore.h; sourceTree = "<group>"; };
+		D2F1FE5317F889220023625F /* ABStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABStore.m; sourceTree = "<group>"; };
+		D2F1FE5417F889220023625F /* CoreData+ABStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+ABStore.h"; sourceTree = "<group>"; };
+		D2F1FE5517F889220023625F /* NSManagedObject+ABStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+ABStore.h"; sourceTree = "<group>"; };
+		D2F1FE5617F889220023625F /* NSManagedObject+ABStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+ABStore.m"; sourceTree = "<group>"; };
+		D2F1FE5717F889220023625F /* NSManagedObjectContext+ABStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+ABStore.h"; sourceTree = "<group>"; };
+		D2F1FE5817F889220023625F /* NSManagedObjectContext+ABStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+ABStore.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D254776B17F71B3800349B2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D254777417F71B3800349B2B /* CoreGraphics.framework in Frameworks */,
+				D254777617F71B3800349B2B /* UIKit.framework in Frameworks */,
+				D254777217F71B3800349B2B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D254776517F71B3800349B2B = {
+			isa = PBXGroup;
+			children = (
+				D2F1FE5117F889220023625F /* ABStore */,
+				D254777717F71B3800349B2B /* ABStore Example */,
+				D25477AB17F71B8500349B2B /* Classes */,
+				D254777017F71B3800349B2B /* Frameworks */,
+				D254776F17F71B3800349B2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D254776F17F71B3800349B2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D254776E17F71B3800349B2B /* ABStore Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D254777017F71B3800349B2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D254777117F71B3800349B2B /* Foundation.framework */,
+				D254777317F71B3800349B2B /* CoreGraphics.framework */,
+				D254777517F71B3800349B2B /* UIKit.framework */,
+				D254778A17F71B3800349B2B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D254777717F71B3800349B2B /* ABStore Example */ = {
+			isa = PBXGroup;
+			children = (
+				D254778017F71B3800349B2B /* AppDelegate.h */,
+				D254778117F71B3800349B2B /* AppDelegate.m */,
+				D254777817F71B3800349B2B /* Supporting Files */,
+			);
+			path = "ABStore Example";
+			sourceTree = "<group>";
+		};
+		D254777817F71B3800349B2B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D254777917F71B3800349B2B /* ABStore Example-Info.plist */,
+				D254777A17F71B3800349B2B /* InfoPlist.strings */,
+				D254777D17F71B3800349B2B /* main.m */,
+				D254777F17F71B3800349B2B /* ABStore Example-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D25477AB17F71B8500349B2B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D25477B217F71CA900349B2B /* Model */,
+				D25477AF17F71C5B00349B2B /* TableViewController.h */,
+				D25477B017F71C5B00349B2B /* TableViewController.m */,
+				D25477B917F7221F00349B2B /* AddPopUpView.h */,
+				D25477BA17F7221F00349B2B /* AddPopUpView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D25477B217F71CA900349B2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D25477B317F71CBA00349B2B /* ExampleModel.xcdatamodeld */,
+				D25477BC17F7372200349B2B /* Person.h */,
+				D25477BD17F7372200349B2B /* Person.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D2F1FE5117F889220023625F /* ABStore */ = {
+			isa = PBXGroup;
+			children = (
+				D2F1FE5217F889220023625F /* ABStore.h */,
+				D2F1FE5317F889220023625F /* ABStore.m */,
+				D2F1FE5417F889220023625F /* CoreData+ABStore.h */,
+				D2F1FE5517F889220023625F /* NSManagedObject+ABStore.h */,
+				D2F1FE5617F889220023625F /* NSManagedObject+ABStore.m */,
+				D2F1FE5717F889220023625F /* NSManagedObjectContext+ABStore.h */,
+				D2F1FE5817F889220023625F /* NSManagedObjectContext+ABStore.m */,
+			);
+			name = ABStore;
+			path = ../ABStore;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D254776D17F71B3800349B2B /* ABStore Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D254779A17F71B3800349B2B /* Build configuration list for PBXNativeTarget "ABStore Example" */;
+			buildPhases = (
+				D254776A17F71B3800349B2B /* Sources */,
+				D254776B17F71B3800349B2B /* Frameworks */,
+				D254776C17F71B3800349B2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ABStore Example";
+			productName = "ABStore Example";
+			productReference = D254776E17F71B3800349B2B /* ABStore Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D254776617F71B3800349B2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Alexander Blunck";
+			};
+			buildConfigurationList = D254776917F71B3800349B2B /* Build configuration list for PBXProject "ABStore Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D254776517F71B3800349B2B;
+			productRefGroup = D254776F17F71B3800349B2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D254776D17F71B3800349B2B /* ABStore Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D254776C17F71B3800349B2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D254777C17F71B3800349B2B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D254776A17F71B3800349B2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D254778217F71B3800349B2B /* AppDelegate.m in Sources */,
+				D25477B117F71C5B00349B2B /* TableViewController.m in Sources */,
+				D25477BB17F7221F00349B2B /* AddPopUpView.m in Sources */,
+				D254777E17F71B3800349B2B /* main.m in Sources */,
+				D2F1FE5A17F889220023625F /* NSManagedObject+ABStore.m in Sources */,
+				D2F1FE5917F889220023625F /* ABStore.m in Sources */,
+				D2F1FE5B17F889220023625F /* NSManagedObjectContext+ABStore.m in Sources */,
+				D25477BE17F7372200349B2B /* Person.m in Sources */,
+				D25477B517F71CBA00349B2B /* ExampleModel.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D254777A17F71B3800349B2B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D254777B17F71B3800349B2B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D254779817F71B3800349B2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D254779917F71B3800349B2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D254779B17F71B3800349B2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ABStore Example/ABStore Example-Prefix.pch";
+				INFOPLIST_FILE = "ABStore Example/ABStore Example-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D254779C17F71B3800349B2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ABStore Example/ABStore Example-Prefix.pch";
+				INFOPLIST_FILE = "ABStore Example/ABStore Example-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D254776917F71B3800349B2B /* Build configuration list for PBXProject "ABStore Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D254779817F71B3800349B2B /* Debug */,
+				D254779917F71B3800349B2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D254779A17F71B3800349B2B /* Build configuration list for PBXNativeTarget "ABStore Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D254779B17F71B3800349B2B /* Debug */,
+				D254779C17F71B3800349B2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D25477B317F71CBA00349B2B /* ExampleModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D25477B417F71CBA00349B2B /* ExampleModel.xcdatamodel */,
+			);
+			currentVersion = D25477B417F71CBA00349B2B /* ExampleModel.xcdatamodel */;
+			path = ExampleModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D254776617F71B3800349B2B /* Project object */;
+}
