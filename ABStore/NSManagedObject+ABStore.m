@@ -44,27 +44,64 @@
 
 
 #pragma mark - Query
++(instancetype) findFirst
+{
+    return [[self findAll] firstObject];
+}
+
 +(NSArray*) findAll
+{
+    return [self findAllByAttribute:nil withValue:nil];
+}
+
++(instancetype) findFirstByAttribute:(NSString*)attribute withValue:(id)value
+{
+    return [[self findAllByAttribute:attribute withValue:value] firstObject];
+}
+
++(NSArray*) findAllByAttribute:(NSString*)attribute withValue:(id)value
+{
+    return [self findAllByAttribute:attribute withValue:value sortedBy:nil ascending:NO];
+}
+
++(NSArray*) findAllByAttribute:(NSString*)attribute withValue:(id)value sortedBy:(NSString*)sortKey ascending:(BOOL)ascending
+{
+    NSPredicate *predicate = nil;
+    
+    if (attribute && value)
+    {
+        predicate = [NSPredicate predicateWithFormat:@"%K = %@", attribute, value];
+    }
+    
+    return [self executeFetchRequestWithPredicate:predicate sortedBy:sortKey ascending:ascending];
+}
+
++(NSArray*) executeFetchRequestWithPredicate:(NSPredicate*)predicate sortedBy:(NSString*)sortKey ascending:(BOOL)ascending
 {
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:[self entityName]];
     
-    NSError *error = nil;
+    if (predicate)
+    {
+        request.predicate = predicate;
+    }
     
+    if (sortKey)
+    {
+        NSSortDescriptor *desc = [NSSortDescriptor sortDescriptorWithKey:sortKey ascending:ascending];
+        request.sortDescriptors = @[desc];
+    }
+    
+    NSError *error = nil;
     NSArray *result = [[NSManagedObjectContext defaultManagedObjectContext] executeFetchRequest:request error:&error];
     
     if (error)
     {
-        NSLog(@"ABStore: ERROR -> Could findAll \"%@\'s\"", [self entityName]);
+        NSLog(@"ABStore: ERROR -> executeFetchRequestWithPredicate on \"%@\'s\" Failed! ", [self entityName]);
         NSLog(@"ABStore: ERROR -> %@", error);
         return nil;
     }
     
     return result;
-}
-
-+(instancetype) findFirst
-{
-    return [[self findAll] firstObject];
 }
 
 

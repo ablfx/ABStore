@@ -156,12 +156,12 @@
     
     if (urls.count == 0)
     {
-        NSLog(@"ABStore: ERROR -> Couldn't find a *.xcdatamodeld in the application bundle!");
+        NSLog(@"ABStore: ERROR -> Couldn't find a compiled *.xcdatamodeld (.momd) in the application bundle!");
         return nil;
     }
     else if (urls.count > 1)
     {
-        NSLog(@"ABStore: WARNING -> Found more than one *.xcdatamodeld in the application bundle, using %@ .", [urls firstObject]);
+        NSLog(@"ABStore: WARNING -> Found more than one compiled *.xcdatamodeld (.momd) in the application bundle, using ... %@ .", [urls firstObject]);
     }
     
     return [urls firstObject];

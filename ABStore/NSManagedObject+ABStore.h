@@ -17,8 +17,12 @@
 -(void) deleteObject;
 
 //Query
-+(NSArray*) findAll;
 +(instancetype) findFirst;
++(instancetype) findFirstByAttribute:(NSString*)attribute withValue:(id)value;
++(NSArray*) findAll;
++(NSArray*) findAllByAttribute:(NSString*)attribute withValue:(id)value;
++(NSArray*) findAllByAttribute:(NSString*)attribute withValue:(id)value sortedBy:(NSString*)sortKey ascending:(BOOL)ascending;
++(NSArray*) executeFetchRequestWithPredicate:(NSPredicate*)predicate sortedBy:(NSString*)sortKey ascending:(BOOL)ascending;
 
 //Unassociated Object
 -(void) saveUnassociatedObject;
